@@ -1,0 +1,104 @@
+.price {
+    text-align: center;
+}
+
+.price .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.price .box {
+    /* width: 31.5%; */
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+
+.price button {
+    margin-bottom: 20px;
+}
+
+.price .box:nth-child(1) .topbtn button,
+.price .box:nth-child(3) .topbtn button {
+    display: none;
+}
+
+.price h3 {
+    font-size: 22px;
+}
+
+.price h1 {
+    font-size: 60px;
+}
+
+.price h1 span {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.price ul {
+    margin-top: 40px;
+}
+
+.price ul li {
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+.price label {
+    font-size: 27px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.price .btn5 {
+    width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+    .price .box {
+        padding: 20px;
+    }
+    .price h1 {
+        font-size: 50px;
+    }
+    .price label {
+        margin-right: 17px;
+    }
+    .btn5 {
+        padding: 15px 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .price .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .price .box {
+        padding: 20px;
+    }
+
+    .price h1 {
+        font-size: 50px;
+    }
+
+    .btn5 {
+        padding: 15px 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .price h1 {
+        font-size: 40px;
+    }
+
+    .price .content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+}

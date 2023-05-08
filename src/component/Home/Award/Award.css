@@ -1,0 +1,71 @@
+.award {
+    color: #fff;
+    text-align: center;
+    background-color: #122947;
+}
+
+.award .heading {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.award .heading h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.award .heading p {
+    color: #27ae60;
+}
+
+.award .icon {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin: auto;
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4% 50%;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.award h1 {
+    font-size: 50px;
+}
+
+.award p {
+    color: gray;
+}
+
+@media screen and (max-width: 850px) {
+    .award .grid4 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+    .award .heading {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .award .grid4 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    .award .heading {
+        width: 100%;
+    }
+    .award .heading h1 {
+        font-size: 25px;
+    }
+    .award h1 {
+        font-size: 45px;
+    }
+}

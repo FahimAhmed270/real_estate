@@ -1,0 +1,48 @@
+.feature .box {
+    text-align: center;
+    padding: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
+}
+
+.feature img {
+    width: 65px;
+    height: 65px;
+    margin: auto;
+}
+
+.feature h1 {
+    font-size: 35px;
+    color: #2d3954;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #72809d;
+}
+
+@media screen and (max-width:900px) {
+    .grid5 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .grid5 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .grid5 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+    }
+}
